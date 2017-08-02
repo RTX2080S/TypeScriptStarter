@@ -7,8 +7,8 @@ export class Meal {
 
     constructor(data: any) {
         console.log(data);
-        this.id = ko.observable(data.Id);
-        this.mealName = ko.observable(data.Name);
-        this.price = ko.observable(data.Price);
+        this.id = ko.observable(data.id);
+        this.mealName = ko.observable(data.name);
+        this.price = ko.observable(data.price);
     }
 }
