@@ -6,8 +6,8 @@ export class Meal {
     public price: KnockoutObservable<any>;
 
     constructor(data: any) {
-        this.id = ko.observable(data.id);
-        this.mealName = ko.observable(data.name);
-        this.price = ko.observable(data.price);
+        this.id = ko.observable(data.Id);
+        this.mealName = ko.observable(data.Name);
+        this.price = ko.observable(data.Price);
     }
 }

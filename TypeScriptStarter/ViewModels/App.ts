@@ -12,7 +12,7 @@ export class App {
 
     private loadData = () => {
         let self = this;
-        $.getJSON("/api/meals/getAllMeals", function (allData) {
+        $.getJSON("/meals/getAllMeals", function (allData) {
             self.mappedMeals = $.map(allData, function (item) { return new Meal(item) });
         }).then(function () {
             // Bind the data when everything is ready
